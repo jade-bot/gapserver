@@ -6,7 +6,7 @@ html(lang="en")
     link(rel='stylesheet', href="stylus/app.css")
     - if (phonegap)
       script(src="phonegap.0.9.5.min.js")
-    script
+    script.
       window.isPhoneGap = #{ (phonegap) };
       window.debug = #{ debug };
   body
@@ -14,7 +14,7 @@ html(lang="en")
     p Your current build configuration is #{config.build}
     != partial("partial.jade")
     script(src="scripts/app.js")
-    script
+    script.
       var ready = function() {
         console.log("ready!");
       }
